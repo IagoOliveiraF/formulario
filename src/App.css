@@ -1,0 +1,191 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+  --primaryColor_Green_200: hsl(148, 38%, 91%);
+  --primaryColor_Green_600: hsl(169, 82%, 27%);
+  --primaryColor_Red: hsl(0, 66%, 54%);
+  --neutral_White: hsl(0, 0%, 100%);
+  --neutral_Grey_500: hsl(186, 15%, 59%);
+  --neutral_Grey_900: hsl(187, 24%, 22%);
+
+
+  /*.karla-<uniquifier> {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Grey 500 (medium): hsl(186, 15%, 59%)
+- Grey 900 (darker): hsl(187, 24%, 22%)
+
+  }
+*/
+
+}
+
+/*===============FORM===============*/
+.Form {
+  width: 65rem;
+  padding: 3rem;
+  border-radius: 1.8rem;
+  background-color: var(--neutral_White);
+}
+
+.Form h1 {
+  font-size: 2.5rem;
+  color: var(--neutral_Grey_900);
+  margin-bottom: 1.5rem;
+}
+
+.Form .FormHeader {
+  display: flex;
+  gap: 1rem;
+
+}
+
+.Form .FormHeader div {
+  width: 100%;
+}
+
+.Form label {
+  font-size: 1.6rem;
+}
+
+#LabelFirstName,
+#LabelSecondName,
+#LabelEmailAddress,
+#QueryTypeLabel,
+#LabelTextMessage {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.Form input {
+  width: 100%;
+  height: 4rem;
+  border-radius: 0.5rem;
+  padding-left: 1rem;
+  font-size: 1.6rem;
+  outline: none;
+  border: solid 1px var(--neutral_Grey_500);
+  cursor: pointer;
+}
+
+.Form input:focus {
+  border: solid 1px var(--primaryColor_Green_600)
+}
+
+.Form .Querytype section {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.Form #InputGeneralRadio,
+#InputSupportRadio {
+  margin-inline: 1rem;
+
+}
+
+.Form #LabelGeneralRadio,
+#LabelSupportRadio {
+  cursor: pointer;
+
+}
+
+
+.Querytype section .General,
+.Suporte {
+  display: flex;
+  align-items: center;
+  border: solid 2px var(--neutral_Grey_500);
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.Form #InputTextMessage {
+  display: block;
+  width: 100%;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  padding: 1rem 1rem 1rem 2rem;
+  resize: none;
+  outline: none;
+}
+
+
+.Form #InputTextMessage:focus {
+    border: solid 1px var(--primaryColor_Green_600)
+
+}
+
+section div input[type="radio"] {
+  width: 2.5rem;
+}
+
+section div input[type="radio"] {
+  width: 2.5rem;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+.Querytype {
+  margin-block: 2rem;
+}
+
+.FormFooter .FormCheckBox {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-block: 3.5rem;
+}
+
+.FormFooter .FormCheckBox #InputCheckBox {
+  width: 2.5rem;
+}
+
+.Form button {
+  border: solid 2px transparent;
+  background-color: var(--primaryColor_Green_600);
+  color: var(--neutral_White);
+  font-weight: bold;
+  width: 100%;
+  height: 4rem;
+  font-size: 1.6rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+
+}
+
+.Form button:hover {
+  background-color: var(--neutral_Grey_900);
+}
+
+
+@media screen and (max-width:650px) {
+  .Wrapper {
+    margin-inline: 2rem;
+  }
+
+  .Form {
+    width: 37.5rem;
+  }
+
+  .Form .FormHeader {
+    flex-direction: column;
+  }
+
+  .Form .Querytype section {
+    flex-direction: column;
+  }
+
+
+}
