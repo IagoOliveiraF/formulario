@@ -24,7 +24,7 @@ function App() {
 
           <section className='Email'>
             <label id="LabelEmailAddress">Email Address *</label>
-            <input id="InputEmailAddress"></input>
+            <input id="InputEmailAddress" placeholder='email@example.com'></input>
             <p className="NameError"></p>
           </section>
 
@@ -36,7 +36,7 @@ function App() {
                 <label id="LabelGeneralRadio" htmlFor='InputGeneralRadio'>General Enquiry</label>
                 <p className="NameError"></p>
               </div>
-              <div className="Suporte">
+              <div className="Support">
                 <input id="InputSupportRadio" type="radio" name="Query" value="Support"></input>
                 <label id="LabelSupportRadio" htmlFor='InputSupportRadio'>Support Request</label>
                 <p className="NameError"></p>
